@@ -10,10 +10,10 @@ package contabancaria;
  * @author 1212515703
  */
 public class ContaBancaria {
-    float saldo;
-    String numero;
+    private float saldo;
+    private double numero;
     
-    public ContaBancaria(float saldo, String numero) {
+    public ContaBancaria(float saldo, double numero) {
         this.saldo = saldo;
         this.numero = numero;
     }
@@ -23,7 +23,7 @@ public class ContaBancaria {
             System.out.println("Saldo insuficiente!!!");
         }else{
             this.saldo -= valor;
-            System.out.println("Seu novo saldo é? " + this.saldo);
+            System.out.println("Seu novo saldo é: " + this.saldo);
         }
     }
     void depositar(float valor){
@@ -32,5 +32,21 @@ public class ContaBancaria {
     }
     void extrato(){
         System.out.println("Seu saldo é: " + this.saldo);
+    }
+    
+    public float getSaldo(){
+        return this.saldo;
+    }
+    
+    public void setSaldo(float Saldo){
+        this.saldo = saldo;
+    }   
+    
+    public double getNumero(){
+        return this.numero;
+    }
+    
+    public void setNumero(int numero){
+        this.numero = numero;
     }
 }

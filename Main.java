@@ -11,9 +11,9 @@ package contabancaria;
  */
 public class Main {
      public static void main(String args[]){
-         ContaBancaria c1 = new ContaBancaria(100, "123");
-         c1.sacar(600);
-         c1.depositar(200);
+         ContaBancaria c1 = new ContaBancaria(200, 400);
+         c1.sacar(800);
+         c1.depositar(600);
          c1.extrato();
      }
 }
