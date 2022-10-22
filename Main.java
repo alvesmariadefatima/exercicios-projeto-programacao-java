@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package contabancaria;
+package heranca;
 
-/**
- *
- * @author 1212515703
- */
 public class Main {
-     public static void main(String args[]){
-         ContaBancaria c1 = new ContaBancaria(200, 400);
-         c1.sacar(800);
-         c1.depositar(600);
-         c1.extrato();
-     }
+    public static void main(String [] args){
+        Aluno aluno = new Aluno("1234", "Maria", "98543");
+        
+        Professor professor = new Professor("Yana", "9843", 1245);
+        
+        System.out.println(aluno.getNome());
+        System.out.println(professor.getNome());
+    }
 }
