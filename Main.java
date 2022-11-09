@@ -1,25 +1,13 @@
-package animais;
+package interfaces;
 
 public class Main {
-    public static void main(String [] args){
-        Cachorro cachorro = new Cachorro("Flor", 4, "Emite Som", "Corre");
-        Cavalo cavalo = new Cavalo("Margarida", 6, "Emite Som", "Corre");
-        Preguica preguica = new Preguica("Lêmore", 5, "Emite som", "Sobe Árvore");
+    public static void main(String[] args){
+        Quadrado quadrado = new Quadrado(3);
+        Retangulo retangulo = new Retangulo(4, 7);
+        Circulo circulo = new Circulo(7);
         
-        System.out.println(cachorro.getNome());
-        System.out.println(cavalo.getNome());
-        System.out.println(preguica.getNome());
-        
-        System.out.println(cachorro.getIdade());
-        System.out.println(cavalo.getIdade());
-        System.out.println(preguica.getIdade());
-        
-        System.out.println(cachorro.getemitirSom());
-        System.out.println(cavalo.getemitirSom());
-        System.out.println(preguica.getemitirSom());
-        
-        System.out.println(cachorro.getCorrer());
-        System.out.println(cavalo.getCorrer());
-        System.out.println(preguica.getsubirArvore());
-    }    
+        System.out.println("Quadrado: " + quadrado.calculaArea());
+        System.out.println("Retangulo: " + retangulo.calculaArea());
+        System.out.println("Circulo: " + circulo.calculaArea());
+    }
 }
